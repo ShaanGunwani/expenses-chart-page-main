@@ -1,110 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 :root {
-    /* Colors */
-    --clr-bg: hsl(27, 66%, 92%);
-    --clr-soft-red: hsl(10, 79%, 65%);
-    --clr-headings: hsl(25, 47%, 15%);
-    --clr-small: hsl(28, 10%, 53%);
-    --clr-active: hsl(186, 34%, 60%);
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
 }
-
+* {
+  font-family: "DM Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-    display: flex;
-    font-family: 'DM Sans', sans-serif;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: var(--clr-bg);
+  display: flex;
+  background-color: var(--Cream);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 28em;
+main {
+  width: 350px;
 }
-
-.upper-part {
-    display: flex;
-    background: var(--clr-soft-red);
-    justify-content: space-between;
-    padding: 2em;
-    color: white;
-    border-radius: 1em;
+.top {
+  border-radius: 1rem;
+  background-color: var(--Soft-red);
+  padding: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.lower-part {
-    display: flex;
-    flex-direction: column;
-    border-radius: 1em;
-    background: white;
-    padding: 2em;
-    color: var(--clr-headings);
+.balance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-
-.chart-container {
-    display: flex;
-    justify-content: space-between;
+.balance p {
+  font-weight: 400;
 }
-
-.chart{
-    display: flex;
-    flex-direction: column;
-    height: 12em;
-    gap: 0.5em;
-    justify-content: center;
-    align-items: center;
+.bottom {
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
 }
-
-.chart-wrapper{
-    width: 2.5em;
-    display: flex;
-    align-items: flex-end;
-    height: 90%;
+.bottom h1 {
+  color: var(--Dark-brown);
 }
-
-.chart-value{
-    height: var(--height);
-    background: var(--clr-soft-red);
-    width: 100%;
-    border-radius: 0.25em;
+#myChart {
+  margin: 1rem 0;
 }
-
-.chart-value.active{
-    background: var(--clr-active);
+.divider {
+  background-color: var(--Cream);
+  width: 100%;
+  height: 2px;
+  margin-bottom: 1rem;
 }
-
-.chart-title{
-    color: var(--clr-small);
-    font-size: 0.8em;
+.totals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-hr{
-    border: none;
-    width: 100%;
-    height: 1px;
-    background: var(--clr-bg);
-    margin: 1em 0;
+.this_month p {
+  color: var(--Medium-brown);
 }
-
-.stats{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.this_month h2 {
+  color: var(--Dark-brown);
 }
-
-.stats .right{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.last_month p:first-child {
+  font-weight: 700;
+  color: var(--Dark-brown);
 }
-
-.lower-part small {
-    font-size: 0.8em;
-    color: var(--clr-small);
+.last_month p:last-child {
+  color: var(--Medium-brown);
 }
