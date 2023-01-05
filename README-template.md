@@ -14,9 +14,7 @@ This is a solution to the [Expenses-chart page Quiz 2 challenge]
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -32,16 +30,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. Crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![image](https://user-images.githubusercontent.com/114371881/210704758-6b9e48a4-63eb-4cbb-a947-20e75bc8301d.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/ShaanGunwani/expenses-chart-page-main]
+- Live Site URL: [https://shaangunwani.github.io/expenses-chart-page-main/]
 
 ## My process
 
@@ -51,9 +45,11 @@ Add a screenshot of your solution. Crop/optimize/edit your image however you lik
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- React - JS Library
+- Next.js -  React framework
 - [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
 
 ### What I learned
 
@@ -62,46 +58,48 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section class="bottom">
+        <h1>Spending - Last 7 days</h1>
+        <canvas id="myChart"></canvas>
+        <div class="divider"></div>
+        <div class="totals">
+          <div class="this_month">
+            <p>Total this month</p>
+            <h2>$478.33</h2>
+          </div>
+          <div class="last_month">
+            <p>+2.4%</p>
+            <p>from last month</p>
+          </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.last_month p:first-child {
+  font-weight: 700;
+  color: var(--Dark-brown);
+}
+.last_month p:last-child {
+  color: var(--Medium-brown);
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  const titleTooltip = (e) => `$${e[0].formattedValue}`;
+  const labelTooltip = (e) => "";
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I want to refine and continue more on the JQuery and the React JS library and I will try to focus on these topics in the future projects. 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Example resource 1]([https://www.example.com](https://www.w3schools.com/js/js_intro.asp)) - This helped me gain extra knowledge regarding javascript. I really liked this website and I will always use this website and read through it to gain more knowledge regarding the topics I will learn later on in more classes to come.
+- [Example resource 2]([https://www.example.com](https://www.w3schools.com/react/default.asp)) - This is an amazing website. It helped me learn a little bit of react and for me to immplement it on this quiz. 
 
 ## Your Detail 
 
-- FullName - [Add your name here]
-- StudentID - [Add your StudentID here]
-- BINUS Email - [Add your BINUS email here]
+- FullName - [Shaan Kishore Gunwani]
+- StudentID - [2602176982]
+- BINUS Email - [shaan.gunwani@binus.ac.id]
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
